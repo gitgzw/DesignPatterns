@@ -4,9 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import cn.com.wankr.designpatterns.Adapter.CAdapter;
-import cn.com.wankr.designpatterns.Adapter.OAdapter;
-import cn.com.wankr.designpatterns.Adapter.IPhoneSeven;
+import cn.com.wankr.designpatterns.adapter.CAdapter;
+import cn.com.wankr.designpatterns.adapter.OAdapter;
+import cn.com.wankr.designpatterns.adapter.IPhoneSeven;
 import cn.com.wankr.designpatterns.command.Client;
 
 public class MainActivity extends AppCompatActivity {

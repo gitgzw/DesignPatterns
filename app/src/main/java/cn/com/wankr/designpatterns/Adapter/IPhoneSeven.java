@@ -1,4 +1,4 @@
-package cn.com.wankr.designpatterns.Adapter;
+package cn.com.wankr.designpatterns.adapter;
 
 /**
  * Created by lei on 2016/10/12.

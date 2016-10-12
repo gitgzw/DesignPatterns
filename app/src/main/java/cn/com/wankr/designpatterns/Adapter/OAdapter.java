@@ -1,4 +1,4 @@
-package cn.com.wankr.designpatterns.Adapter;
+package cn.com.wankr.designpatterns.adapter;
 
 /**
  * 对象适配器
