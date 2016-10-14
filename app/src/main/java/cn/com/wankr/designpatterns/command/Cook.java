@@ -10,11 +10,11 @@ public class Cook {
 
     //烤乳猪的方法
     public void cookPig(){
-        Log.d("cook","pig");
+        Log.e("cook","pig");
     }
 
     //烧花鸭的方法
     public void cookDuck(){
-        Log.d("cook","duck");
+        Log.e("cook","duck");
     }
 }

@@ -8,6 +8,7 @@ import cn.com.wankr.designpatterns.adapter.CAdapter;
 import cn.com.wankr.designpatterns.adapter.OAdapter;
 import cn.com.wankr.designpatterns.adapter.IPhoneSeven;
 import cn.com.wankr.designpatterns.command.Client;
+import cn.com.wankr.designpatterns.facade.Facade;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         testCommand();
 
         testAdapter();
+
+        testFacade();
     }
 
     /**
@@ -35,9 +38,19 @@ public class MainActivity extends AppCompatActivity {
     private void testAdapter() {
         IPhoneSeven iPhoneSeven = new IPhoneSeven();
         OAdapter oAdapter = new OAdapter(iPhoneSeven);
-        Log.d("对象适配器", oAdapter.getRightInterface());
+        Log.e("对象适配器", oAdapter.getRightInterface());
 
         CAdapter cAdapter = new CAdapter();
-        Log.d("类适配器", cAdapter.getRightInterface());
+        Log.e("类适配器", cAdapter.getRightInterface());
+    }
+
+    /**
+     * 测试外观模式的方法
+     */
+    private void testFacade() {
+        Facade facade = new Facade();
+//        facade.lightOn();
+//        facade.airConditionaOn();
+        facade.doMyHabit();
     }
 }
