@@ -9,6 +9,7 @@ import cn.com.wankr.designpatterns.adapter.OAdapter;
 import cn.com.wankr.designpatterns.adapter.IPhoneSeven;
 import cn.com.wankr.designpatterns.command.Client;
 import cn.com.wankr.designpatterns.facade.Facade;
+import cn.com.wankr.designpatterns.templatemethod.ConcreteDrink;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         testAdapter();
 
         testFacade();
+
+        testTemplateMethod();
     }
 
     /**
@@ -52,5 +55,13 @@ public class MainActivity extends AppCompatActivity {
 //        facade.lightOn();
 //        facade.airConditionaOn();
         facade.doMyHabit();
+    }
+
+    /**
+     * 测试模板方法模式
+     */
+    private void testTemplateMethod() {
+        ConcreteDrink mDrink = new ConcreteDrink();
+        mDrink.getDrink();
     }
 }
